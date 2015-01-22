@@ -51,6 +51,14 @@ public class WebController {
     	// with the URL: http://localhost:8080/
         return "Hello World";
     }
+    
+    @RequestMapping(value = "/cs480/FirstHome", method = RequestMethod.GET)
+    String FirstString()
+    {
+    	//return "First Try!";
+    	return "This is Hetal Sakaria";
+    	
+    }
 
     /**
      * This is a simple example of how to use a data manager
@@ -126,10 +134,13 @@ public class WebController {
      * functionalities used in this web service.
      */
     @RequestMapping(value = "/cs480/home", method = RequestMethod.GET)
-    ModelAndView getUserHomepage() {
+    ModelAndView getUserHomepage() 
+    {
         ModelAndView modelAndView = new ModelAndView("home");
         modelAndView.addObject("users", listAllUsers());
         return modelAndView;
     }
+    
+   
 
 }
