@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>CS480 Demo Web Service</title>
+    <title>CS480 PolyPower</title>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>    
     <script src="/js/home-control.js"></script>
 </head>
